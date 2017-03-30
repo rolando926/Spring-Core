@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="classA" class="SpringCore_Collections.ClassAWithList">
+        <property name="students">
+            <list>
+                <value>Archana</value>
+                <value>Kinnari</value>
+                <value>Jean Paul</value>
+                <value>Tom</value>
+                <value>Jay</value>
+                <value>Sravanthi</value>
+                <value>Sandhya</value>
+                <value>Kimberly</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="classB" class="SpringCore_Collections.ClassBWithMap">
+        <property name="students">
+            <map>
+                <entry key="Archana" value="Associate"/>
+                <entry key="Kinnari" value="Associate"/>
+                <entry key="Jean Paul" value="Contractor"/>
+                <entry key="Tom" value="Contractor"/>
+                <entry key="Jay" value="Associate"/>
+                <entry key="Kimberly" value="Associate"/>
+                <entry key="Sandhya" value="Contractor"/>
+                <entry key="Sravanthi" value="Associate"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
