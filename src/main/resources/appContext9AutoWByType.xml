@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="classA" class="SpringCore9_AutoWByType.ClassA">
+        <property name="strMessage" value="This is ClassA with Setter."/>
+    </bean>
+
+    <bean id="classB" class="SpringCore9_AutoWByType.ClassB">
+        <property name="strMessage" value="This is ClassB with Setter."/>
+    </bean>
+
+    <bean id="classC" class="SpringCore9_AutoWByType.ClassC">
+        <property name="objClassA" ref="classA"/>
+        <property name="objClassB" ref="classB"/>
+    </bean>
+
+    <bean id="classCAuto" class="SpringCore9_AutoWByType.ClassC" autowire="byType"/>
+
+
+</beans>
