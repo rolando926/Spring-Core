@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="SpringCore1_BasicInitialization_main" target="1.5" />
+      <module name="SpringCore1_BasicInitialization_test" target="1.5" />
       <module name="SpringCore_BasicInitialization_main" target="1.5" />
       <module name="SpringCore_BasicInitialization_test" target="1.5" />
       <module name="SpringCore_main" target="1.5" />
