@@ -8,8 +8,12 @@
         <property name="strMessage" value="This is ClassA with Setter."/>
     </bean>
 
-    <bean id="classB" class="SpringCore9_AutoWByType.ClassB">
+    <bean id="classB" class="SpringCore9_AutoWByType.ClassB" primary="true">
         <property name="strMessage" value="This is ClassB with Setter."/>
+    </bean>
+
+    <bean id="classBExt" class="SpringCore9_AutoWByType.ClassB">
+        <property name="strMessage" value="This is ClassBExt with Setter."/>
     </bean>
 
     <bean id="classC" class="SpringCore9_AutoWByType.ClassC">
